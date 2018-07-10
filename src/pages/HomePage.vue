@@ -1,14 +1,21 @@
 <template lang="html">
   <div id="app-page-home">
-    <app-component-postpre v-for="post, indx in posts" :post_data="post" :data-indx="indx"></app-component-postpre>
+    <app-component-postpre v-for="post, indx in posts" :post_data="post"></app-component-postpre>
   </div>
 </template>
 
 <script>
+import PostPreview from '../components/PostPreview.vue'
+
 export default {
   name: 'app-page-home',
-  data: {
-    posts: []
+  components: {
+    'app-component-postpre': PostPreview
+  },
+  data () {
+    return {
+      posts: []
+    }
   },
   created () {
     var vm = this
