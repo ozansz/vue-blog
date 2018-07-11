@@ -19,9 +19,9 @@ export default {
   },
   created () {
     var vm = this
-    $root.getAxios().get('/post')
+    this.$root.getAxios().get('/post')
       .then(res => {
-        vm.posts = res.data.posts
+        vm.posts = res.data
       }, err => {
 
       })
