@@ -38,36 +38,39 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
 .app-component-postpre {
   position: relative;
   text-align: center;
   color: #27292B;
   padding-bottom: 25px;
-}
-.app-component-postpre img {
-  width: 100%;
-  height: auto;
-}
-.app-component-postpre .pre-header {
-  font-family: 'Lora', serif;
-  font-size: 37px;
-  margin-top: 18px;
-  margin-bottom: 6px;
-}
-.app-component-postpre .pre-ts {
-  font-size: 14px;
-}
-.app-component-postpre .pre-content {
-  font-size: 16px;
-  width: 85%;
-  margin: 25px auto;
-}
-.app-component-postpre .pre-content, .app-component-postpre .pre-ts {
-  font-family: 'Lato', sans-serif;
-}
-.app-component-postpre a {
-  color: #27292B;
+  background-color: #fff;
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .pre-header {
+    font-family: 'Lora', serif;
+    font-size: 37px;
+    padding-top: 18px;
+    margin-bottom: 6px;
+  }
+  .pre-ts {
+    font-size: 14px;
+  }
+  .pre-content {
+    font-size: 16px;
+    width: 85%;
+    margin: 25px auto;
+  }
+  .pre-content, .pre-ts {
+    font-family: 'Lato', sans-serif;
+  }
+  a {
+    color: #27292B;
+  }
 }
 @media only screen and (min-width: 480px) {
   .app-component-postpre .pre-header {
