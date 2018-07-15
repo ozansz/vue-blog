@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <app-component-sidebar id="app-left-sb"></app-component-sidebar>
+    <div id="app-left-sb">
+      <app-component-sidebar></app-component-sidebar>
+    </div>
     <app-component-topmenu id="app-left-tm"></app-component-topmenu>
     <app-component-sidemenu id="app-left-sm"></app-component-sidemenu>
     <app-component-topnavbar id="app-left-tnb"></app-component-topnavbar>
@@ -38,6 +40,8 @@ export default {
 }
 #app-left-sb {
   display: block;
+  width: 28%;
+  position: fixed;
 }
 #app-left-sm, #app-left-tnb, #app-left-tm {
   display: none;
