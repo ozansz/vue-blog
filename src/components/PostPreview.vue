@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="app-component-postpre">
-    <img v-if="post_data.use_img" :src="post_data.image_url">
+    <img v-if="post_data.use_img" :src="post_data.image_url[0]">
     <div class="pre-header">{{ post_data.title }}</div>
     <div class="pre-ts">Posted by {{ post_data.author }} on {{ normalized_date }}</div>
     <div class="pre-content">{{ normalized_text }}</div>
