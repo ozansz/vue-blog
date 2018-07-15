@@ -35,8 +35,19 @@ export default {
 #app-page-home {
 
   #home-postpre-container {
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #home-postpre-container {
+    width: 100% !important;
+    margin: 10px auto !important;
+
+    .app-component-postpre:first-child {
+      margin-top: 30px;
+    }
   }
 }
 </style>
