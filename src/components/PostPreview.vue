@@ -72,12 +72,12 @@ export default {
     color: #27292B;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 948px) {
   .app-component-postpre .pre-header {
     font-size: 51px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 948px) {
   .app-component-postpre {
     margin-bottom: 24px;
   }

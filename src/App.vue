@@ -32,11 +32,17 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 #app-rv {
-  width: 80%;
+  width: 72%;
   position: absolute;
   right: 0;
 }
-@media only screen and (max-width: 768px) {
+#app-left-sb {
+  display: block;
+}
+#app-left-sm, #app-left-tnb, #app-left-tm {
+  display: none;
+}
+@media only screen and (max-width: 948px) {
   #app-rv {
     width: 100%;
   }
@@ -47,4 +53,16 @@ export default {
     display: none;
   }
 }
+@media only screen and (max-width: 548px) {
+  #app-rv {
+    width: 100%;
+  }
+  #app-left-tnb {
+    display: flex;
+  }
+  #app-left-sb, #app-left-sm, #app-left-tm {
+    display: none;
+  }
+}
+
 </style>
